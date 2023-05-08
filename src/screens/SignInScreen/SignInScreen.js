@@ -10,7 +10,7 @@ const SignInScreen = () => {
   const { password, setPassword } = useState('')
   const { height } = useWindowDimensions();
   const onSignInPressed = () => {
-    console.warn ("Sign in")
+    console.warn("Sign in")
   }
   return (
     <View style={styles.root}>
@@ -31,6 +31,11 @@ const SignInScreen = () => {
         text="Sign In"
         onPress={onSignInPressed}
       />
+
+      <CustomButton
+        text="Forgot Password?"
+        onPress={onPressed}
+      />
     </View>
   )
 };
@@ -45,7 +50,7 @@ const styles = StyleSheet.create({
     maxWidth: 100,
     maxHeight: 100,
     // borderRadius : '20px'
-    borderRadius : 30,
+    borderRadius: 30,
 
   }
 })
